@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My | CaseConverter</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper" role="main">
+        <noscript>
+            <div class="message upgrade">JavaScript is required to use this web site. Please turn it on in your browser
+                or whitelist this site, then refresh the page.</div>
+        </noscript>
+        <div id="container">
+            <h1>Accidentally left the caps lock on and typed something, but can't be bothered to start again and retype
+                it all?</h1>
+            <p><label for="content">Simply enter your text and choose the case you want to convert it to.</label></p>
+            <div class="feature">
+                <div data-aaad="true" data-aa-adunit="/153247860/ConvertCase_728x90_ATF"></div>
+            </div>
+            <form action="/" method="post">
+                <div class="row"><textarea id="content" name="content" onkeyup="counter(this);"
+                        placeholder="Type or paste your content here" autofocus></textarea></div>
+            </form>
+            <div class="messages"></div>
+            <div class="actions"><button id="sentence" class="btn" onclick="Sencase()">Sentence case</button>
+                <button id="lower" class="btn" onclick="Lowcase()">lower case</button>
+                <button id="upper" class="btn" onclick="Uppcase()">UPPER CASE</button>
+                <button id="capitalized" class="btn" onclick="Capcase()">Capitalized Case</button>
+                <button id="alternating" class="btn" onclick="Altcase()">aLtErNaTiNg cAsE</button>
+                <button id="title" class="btn" onclick="Titlecase()">Title Case</button>
+                <button id="inverse" class="btn" onclick="Invcase()">InVeRsE CaSe</button>
+                <button id="download" class="btn" data-download-target="#content">Download Text</button>
+                <button id="copy" class="btn" onclick="Cpy()" data-clipboard-target="#content">Copy to
+                    Clipboard</button>
+                <button id="clear" class="btn" onclick="Clr()">Clear</button>
+            </div>
+            <div class="row counts">
+                Character Count: <span id="char_count">0</span> |
+                Word Count: <span id="word_count">0</span> |
+                Line Count: <span id="line_count">0</span>
+            </div>
+            <div class="feature bottom">
+                <div class="social-icons">
+                    <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <p class="legal">Mr.Dee<br>We are here for you ease</p>
+        </div>
+        <div data-aaad="true" data-aa-adunit="/153247860/ConvertCase_Mob_StickyFooter"></div>
+        <script src="assets/js/script.js"></script>
+</body>
+
+</html>
